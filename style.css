@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root {
+    --body-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-bg: hsl(215, 32%, 27%);
+    --currency-color: hsl(178, 100%, 50%);
+    --text-color: hsl(215, 51%, 70%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--body-bg);
+}
+
+h2 {
+    margin: 0;
+}
+/* Card Style */
+.card {
+    max-width: 370px;
+    border-radius: 15px;
+    margin: 7rem auto 1rem;
+    background-color: var(--card-bg);
+}
+.card-img {
+    padding: 1.4rem;
+    position: relative;
+}
+.card-img img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+.card-text {
+    padding: 0 1.4rem 1.4rem
+}
+.card-text a {
+    text-decoration: none;
+}
+.card-text h2 {
+    color: var(--white);
+    font-size: 1.6rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: .4s ease;
+
+}
+.card-text p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    opacity: 0.8;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.buy-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+.buy-info img {
+    margin-right: 3px;
+}
+.buy-info img , .buy-info span {
+    vertical-align: sub;
+}
+.buy-info span:first-child {
+    color: var(--currency-color);
+}
+.buy-info span:last-child {
+    color: var(--text-color);
+}
+.card-footer {
+    border-top: 1px solid var(--line-bg);
+}
+.owner {
+    margin-top: 1rem;
+}
+.owner img {
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+.owner span {
+    margin-left: 1rem;
+    color: var(--text-color);
+}
+.owner a {
+    color: var(--white);
+    opacity: 0.7;
+    transition: .4s ease;
+
+}
+
+/* Hover Styles*/
+.overlay {
+    background-color: rgba(0, 255, 247, 0);
+    position: absolute;
+    z-index: 5;
+    width: 88%;
+    height: 88%;
+    top: 6%;
+    left: 6%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .4s ease;
+}
+.overlay img {
+    width: 50px;
+    height: auto;
+}
+.card-img a:hover .overlay {
+    background-color: rgba(0, 255, 247, 0.5);
+    opacity: 1;
+}
+.card-text h2:hover {
+    color: var(--currency-color);
+    
+}
+.owner a:hover {
+    color: var(--currency-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 17px; text-align: center; color: var(--white); }
+.attribution a { color: hsl(228, 45%, 44%); }
